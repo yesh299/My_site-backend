@@ -19,8 +19,8 @@ app.use('/uploads/images', express.static(path.join(__dirname, 'uploads', 'image
 
 // CORS configuration
 app.use(cors({
-  origin: process.env.CLIENT_ORIGIN || 'http://localhost:3000',
-  credentials: true,
+  origin: true,
+  credentials: false,
   methods: ['GET', 'POST', 'PATCH', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
