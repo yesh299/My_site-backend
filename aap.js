@@ -5,6 +5,7 @@ const path = require('path');
 const fs = require('fs');
 require('dotenv').config();
 const { connectDB } = require('./util/db-mongodb');
+const { prisma } = require('./util/db-prisma');
 
 const placesRoutes = require('./routes/places-routes-prisma');
 const usersRoutes = require('./routes/users-routes-prisma');
